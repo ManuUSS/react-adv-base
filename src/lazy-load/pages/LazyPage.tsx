@@ -1,7 +1,9 @@
-import React from 'react'
+
 
 export const LazyPage = () => {
   return (
-    <div>LazyPage</div>
+    <h1>LazyPage</h1>
   )
 }
+
+export default LazyPage;
