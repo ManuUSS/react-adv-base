@@ -1,9 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
-import { LazyPage, LazyPage2, LazyPage3 } from '../lazy-load/pages';
 
 import logo from '../logo.svg'
 import { ShoppingPage } from '../component-patterns/pages/ShoppingPage';
+import { LazyPage, LazyPage2, LazyPage3 } from '../lazy-load/pages';
+
+
 
 export const Navigation = () => {
     return (
@@ -37,7 +39,7 @@ export const Navigation = () => {
                     <Route path="/*" element={ <Navigate to="/lazy1" replace /> } />
                 </Routes>
 
-            </div>
+                </div>
         </BrowserRouter>
     )
 }
