@@ -19,8 +19,8 @@ export const ShoppingPage = () => {
             }}
         >
             <ProductCard product={ product }>
-              <ProductImage />
-              <ProductTitle title='Hola Mundo'/>
+              <ProductImage className='custom-image'/>
+              <ProductTitle title='Hola Mundo' className='text-white'/>
               <ProductButtons />
             </ProductCard>
             
