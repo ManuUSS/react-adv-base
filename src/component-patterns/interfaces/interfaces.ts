@@ -9,6 +9,7 @@ export interface Product {
 export interface PropsProductCard {
     product  : Product;
     children?: ReactElement | ReactElement[];
+    className?: string;
 }
 
 export interface ProductContextProps {
