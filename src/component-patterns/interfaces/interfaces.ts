@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { CSSProperties, ReactElement } from 'react';
 import { Props as ProductButtonProps } from '../components/ProductButtons';
 import { Props as ProductImageProps } from '../components/ProductImage';
 import { Props as ProductTitleProps } from '../components/ProductTitle';
@@ -10,9 +10,10 @@ export interface Product {
 }
 
 export interface PropsProductCard {
-    product  : Product;
-    children?: ReactElement | ReactElement[];
+    product   : Product;
+    children? : ReactElement | ReactElement[];
     className?: string;
+    style?    : CSSProperties;
 }
 
 export interface ProductContextProps {
