@@ -22,7 +22,7 @@ export const ShoppingPage = () => {
 
   const [ shoppingCart, setShoppingCart ] = useState<{ [key: string]: ProductInCart} >({});
 
-  const onProductCountChange = () => {
+  const onProductCountChange = ({ count, product }: { count: number, product: Product }) => {
     console.log('Holaaa');
   }
 
@@ -43,6 +43,7 @@ export const ShoppingPage = () => {
                 key={ p.id } 
                 product={ p } 
                 style={{ backgroundColor: '#70D1F8'}}
+                onChange={ onProductCountChange }
               >
                 <ProductImage style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }}/>
                 <ProductTitle style={{ fontWeight: 'bold' }}/>
@@ -55,7 +56,7 @@ export const ShoppingPage = () => {
             <ProductCard 
               product={ product2 } 
               style={{ backgroundColor: '#70D1F8', width: '100px' }}
-              onChange={ () => onProductCountChange() }
+              onChange={ onProductCountChange }
             >
                 <ProductImage style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }}/>
                 <ProductButtons style={{ display: 'flex', justifyContent: 'end' }}/>
