@@ -14,6 +14,7 @@ export interface PropsProductCard {
     children? : ReactElement | ReactElement[];
     className?: string;
     style?    : CSSProperties;
+    onChange? : () => void;
 }
 
 export interface ProductContextProps {
