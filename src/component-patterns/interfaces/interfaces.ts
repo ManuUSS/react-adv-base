@@ -15,6 +15,11 @@ export interface PropsProductCard {
     className?: string;
     style?    : CSSProperties;
     onChange? : ( args: onChangeArgs ) => void;
+    value?    : number;
+}
+
+export interface ProductInCart extends Product {
+    count: number;
 }
 
 export interface onChangeArgs  {
