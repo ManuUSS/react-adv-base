@@ -8,7 +8,7 @@ interface FormValues {
   email: string ;
 }
 
-export const FormikYupPage = () => {
+export const FormikComponents = () => {
 
   const { handleSubmit, errors, touched, getFieldProps } = useFormik<FormValues>({
     initialValues: {
@@ -34,7 +34,7 @@ export const FormikYupPage = () => {
 
   return (
     <div>
-      <h1>Formik Yup Tutorial</h1>
+      <h1>Formik Components Tutorial</h1>
       <form noValidate onSubmit={ handleSubmit }>
         
         <label htmlFor="firstName">First Name</label>
