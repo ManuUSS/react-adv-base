@@ -8,9 +8,36 @@
     },
     {
         "type": "input",
-        "name": "lasttName",
+        "name": "lastName",
         "placeholder": "Ulate",
         "label": "Last Name",
         "value": ""
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "manuel@gmail.com",
+        "label": "Email",
+        "value": ""
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id": 1 ,
+                "label": "Super Mario"
+            },
+            {
+                "id": 2 ,
+                "label": "Mario Kart"
+            },
+            {
+                "id": 3 ,
+                "label": "Resident Evil"
+            }
+        ]
     }
 ]
